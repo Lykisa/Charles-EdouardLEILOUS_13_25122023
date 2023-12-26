@@ -3,17 +3,22 @@ import './Header.css'
 
 function Header() {
     return(
-        <div className='header'>
-            <nav>
-                <a href="">
-                    <img src={logoBank} alt="logo bank" />
-                </a>
-                <a className="main-nav-item" href="">
-                    <i className="fa fa-user-circle"></i>
-                    Sign in
-                </a>
-            </nav>
+        <nav className="main-nav">
+            <a className="main-nav-logo" href="./index.html">
+                <img
+                className="main-nav-logo-image"
+                src={logoBank}
+                alt="Argent Bank Logo"
+                />
+                <h1 className="sr-only">Argent Bank</h1>
+            </a>
+        <div>
+            <a className="main-nav-item" href="./sign-in.html">
+                <i className="fa fa-user-circle"></i>
+                Sign In
+            </a>
         </div>
+    </nav>
     )
 }
 
