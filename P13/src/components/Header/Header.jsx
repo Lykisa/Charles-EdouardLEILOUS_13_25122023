@@ -8,8 +8,8 @@ function Header() {
                 <a href="">
                     <img src={logoBank} alt="logo bank" />
                 </a>
-                <a href="">
-                    <i class="fa fa-user-circle"></i>
+                <a className="main-nav-item" href="">
+                    <i className="fa fa-user-circle"></i>
                     Sign in
                 </a>
             </nav>
