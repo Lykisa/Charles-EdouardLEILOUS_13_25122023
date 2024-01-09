@@ -2,10 +2,10 @@
 import Home from "./pages/Home.jsx"
 import Signin from "./pages/Signin.jsx"; */
 
-
+/* 
 export const routesArray = [
     {
-        /* path: "",
+        path: "",
         element: <Layout />,
         children: [
             {
@@ -28,6 +28,6 @@ export const routesArray = [
                 element: 
                     <Error404 />
             }
-        ] */
+        ]
     }
-  ];
+  ]; */

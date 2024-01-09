@@ -1,7 +1,7 @@
 import './Features.css'
-import chatIcon from '../../assets/icon-chat.png'
-import moneyIcon from '../../assets/icon-money.png'
-import securityIcon from '../../assets/icon-security.png'
+import chatIcon from '/icon-chat.png'
+import moneyIcon from '/icon-money.png'
+import securityIcon from '/icon-security.png'
 
 function Features() {
     return(
