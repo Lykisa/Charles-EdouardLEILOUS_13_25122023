@@ -21,6 +21,6 @@ export default Account
 
 Account.propTypes = {
     title : PropTypes.string,
-    amount : PropTypes.number,
+    amount : PropTypes.string,
     description : PropTypes.string
   }
