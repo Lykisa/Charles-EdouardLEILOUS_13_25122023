@@ -38,9 +38,12 @@ function Header() {
             )}
             {ifConnected && (
                 <>
-                <span>{user.firstName} {user.lastName}</span>
-                <a onClick={(e) => {e.preventDefault(); signOut()}} className='main-nav-item'>
+                <span className='span_header'>
                     <i className="fa fa-user-circle"></i>
+                    {user.firstName}
+                </span>
+                <a onClick={(e) => {e.preventDefault(); signOut()}} className='main-nav-item'>
+                    <i className="fa fa-sign-out"></i>
                     Sign Out
                 </a>
                 </>

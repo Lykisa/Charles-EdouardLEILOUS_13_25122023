@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { editUser } from "../../actions/userActions";
+import './UserInfos.css'
 
 function UserInfos() {
 
@@ -25,7 +26,7 @@ function UserInfos() {
         <div className="userProfile">
             {open && (
                 <>
-                <h1>Welcome Back</h1>
+                <h1>Welcome back</h1>
                 <form className="userProfile_inputs">
                     <input type="text" defaultValue={state.firstName} placeholder="firstName" id="firstName" />
                     <input type="text" defaultValue={state.lastName} placeholder="lastName" id="lastName"/>
@@ -38,8 +39,8 @@ function UserInfos() {
             )}
             {!open && (
                 <>
-                    <h1>Welcome Back <br /> {state.firstName} {state.lastName} ! </h1>
-                    <button onClick={() => setOpen(true)} >Edit Name</button>
+                    <h1>Welcome back <br /> {state.firstName} {state.lastName} ! </h1>
+                    <button className="edit-button" onClick={() => setOpen(true)} >Edit Name</button>
                 </>
                 
             )}
